@@ -134,7 +134,6 @@ behaviors {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
             excluded-positions = <19 20 33 34 35>;
-            timeout-ms = <200>;
             triggers = "pointer";
         };
     };
