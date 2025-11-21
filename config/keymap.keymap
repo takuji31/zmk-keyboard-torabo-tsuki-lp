@@ -6,7 +6,7 @@
 &behaviors {
     t3_tapdance_win: t3_tapdance_win {
         compatible = "zmk,behavior-tap-dance";
-        bindings = <&mt LGUI LC(SPACE)>, <&kp LA(SPACE)>;
+        bindings = <&mt LCTRL LC(SPACE)>, <&kp LA(SPACE)>;
 
         label = "T3_TAPDANCE_WIN";
     };
