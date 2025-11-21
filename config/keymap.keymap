@@ -30,11 +30,11 @@
 
         BASE {
             bindings = <
-&none  &none   &none   &none   &none             &none                                 &none        &none  &none      &none    &none      &none
-&none  &kp Q   &kp W   &kp F   &kp P             &kp G                                 &kp J        &kp L  &kp U      &kp Y    &kp MINUS  &none
-&none  &kp A   &kp R   &kp S   &kp T             &kp D        &none        &none       &kp H        &kp N  &kp E      &kp I    &kp O      &none
-&none  &kp Z   &kp X   &kp C   &kp V             &kp B        &kp ESC      &kp DEL     &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
-&none  &trans  &trans  &trans  &t3_tapdance_mac  &lt 3 SPACE  &lt 2 LANG2  &lt 4 BSPC  &lt 1 ENTER  &none  &none      &trans   &mo 7      &none
+&none  &none   &none   &none   &none             &none                                &none        &none  &none      &none    &none      &none
+&none  &kp Q   &kp W   &kp F   &kp P             &kp G                                &kp J        &kp L  &kp U      &kp Y    &kp MINUS  &none
+&none  &kp A   &kp R   &kp S   &kp T             &kp D        &none       &none       &kp H        &kp N  &kp E      &kp I    &kp O      &none
+&none  &kp Z   &kp X   &kp C   &kp V             &kp B        &kp ESC     &kp DEL     &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
+&none  &trans  &trans  &trans  &t3_tapdance_mac  &lt 3 SPACE  &lt 2 RGUI  &lt 4 BSPC  &lt 1 ENTER  &none  &none      &trans   &mo 7      &none
             >;
         };
 
