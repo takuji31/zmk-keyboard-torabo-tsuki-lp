@@ -133,8 +133,8 @@ behaviors {
         mouse_temp_layer: mouse-temp-layer {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
+            require-prior-idle-ms = <2000>;
             excluded-positions = <19 20 33 34 35>;
-            triggers = "pointer";
         };
     };
 
