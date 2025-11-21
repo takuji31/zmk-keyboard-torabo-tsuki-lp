@@ -17,11 +17,30 @@
 
         label = "T3_TAPDANCE_MAC";
     };
+            hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-on-release;
+        };
+
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-on-release;
+        };
 };
 
 / {
-    behaviors {
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -32,7 +51,8 @@
             bindings = <
 &none  &none   &none   &none   &none             &none                                &none        &none  &none      &none    &none      &none
 &none  &kp Q   &kp W   &kp F   &kp P             &kp G                                &kp J        &kp L  &kp U      &kp Y    &kp MINUS  &none
-&none  &kp A   &kp R   &kp S   &kp T             &kp D        &none       &none       &kp H        &kp N  &kp E      &kp I    &kp O      &none
+&none  &hml A LCTL   &hml R LALT   &hml S LGUI   &hml T LSFT             &kp D        &none       &none       &kp H       &hmr N RCTL  &hmr E LALT  &hmr I LGUI  &hmr O RSHFT      &none
+
 &none  &kp Z   &kp X   &kp C   &kp V             &kp B        &kp ESC     &kp DEL     &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
 &none  &trans  &trans  &trans  &t3_tapdance_mac  &lt 3 SPACE  &lt 2 RGUI  &lt 4 BSPC  &lt 1 ENTER  &none  &none      &trans   &mo 7      &none
             >;
