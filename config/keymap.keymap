@@ -133,7 +133,7 @@ behaviors {
         mouse_temp_layer: mouse-temp-layer {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
-            excluded-positions = <RC(1, 9) RC(1, 11) RC(2, 9) RC(2, 10) RC(2, 11)>
+            excluded-positions = <19 20 33 34 35>
             layer = <6>;
             timeout-ms = <200>;
             triggers = "pointer";
