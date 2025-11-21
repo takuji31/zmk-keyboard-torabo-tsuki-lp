@@ -142,4 +142,8 @@ behaviors {
 
 &trackball_listener {
     input-processors = <&mouse_temp_layer 5 10000>;
+    scroller {
+        layers = <1>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
 };
