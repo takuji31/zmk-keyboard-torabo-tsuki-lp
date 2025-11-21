@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-&behaviors {
+behaviors {
     t3_tapdance_win: t3_tapdance_win {
         compatible = "zmk,behavior-tap-dance";
         bindings = <&mt LCTRL LC(SPACE)>, <&kp LA(SPACE)>;
