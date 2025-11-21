@@ -7,6 +7,7 @@
 behaviors {
     t3_tapdance_win: t3_tapdance_win {
         compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
         bindings = <&mt LCTRL LC(SPACE)>, <&kp LA(SPACE)>;
 
         label = "T3_TAPDANCE_WIN";
@@ -14,6 +15,7 @@ behaviors {
 
     t3_tapdance_mac: t3_tapdance_mac {
         compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
         bindings = <&mt LGUI LC(SPACE)>, <&kp LA(SPACE)>;
 
         label = "T3_TAPDANCE_MAC";
