@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &behaviors {
@@ -18,110 +17,86 @@
 #define ____ &none
 
 / {
+    behaviors {
+    };
+
     keymap {
         compatible = "zmk,keymap";
+
         // BASE Layer
+
         BASE {
             bindings = <
-                &none  &none  &none  &none  &none  &none                     &none  &none  &none     &none    &none    &none
-                &none  &kp Q  &kp W  &kp F  &kp P  &kp G                     &kp J  &kp L  &kp U     &kp Y &  kp MINUS &none
-                &none  &kp A  &kp R  &kp S  &kp T  &kp D   &none     &none   &kp H  &kp N  &kp E     &kp I    &kp O    &none
-                &none  &kp Z  &kp X  &kp C  &kp V  &kp B   &kp ESC   &kp DEL &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &none
-                &none  &trans &trans &trans &trans &trans  &trans    &trans  &trans &none  &none     &trans   &trans   &none
+&none  &none   &none   &none   &none   &none                     &none   &none  &none      &none    &none      &none
+&none  &kp Q   &kp W   &kp F   &kp P   &kp G                     &kp J   &kp L  &kp U      &kp Y    &kp MINUS  &none
+&none  &kp A   &kp R   &kp S   &kp T   &kp D   &none    &none    &kp H   &kp N  &kp E      &kp I    &kp O      &none
+&none  &kp Z   &kp X   &kp C   &kp V   &kp B   &kp ESC  &kp DEL  &kp K   &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans  &none  &none      &trans   &trans     &none
             >;
         };
 
         NUM {
-    bindings = <
-        &none  &none   &none   &none   &none   &none                 &none   &none   &none       &none   &none       &none
+            bindings = <
+&none   &none   &none                           &none   &none                           &none                                                                    &none  &none   &none   &none   &none   &none
+&none   &kp N1  &kp N2                          &kp N3  &kp N4                          &kp N5 ____ ____ ____ ____ ____                                          &none  &none   &kp N6  &kp N7  &kp N8  &kp N9
+&kp N0  &none   &none ____ ____ ____ ____ ____  &none   &none ____ ____ ____ ____ ____  &trans                           &trans ____ ____ ____ ____ ____  &none  &none  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                          &none   &none                           &trans                           &trans                           &none
+            >;
+        };
 
-        &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                ____   ____   ____        ____   ____        &none
-
-        &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0     &none  &none   ____   ____   ____        ____   ____        &none
-
-        &none  ____    ____    ____    ____    ____      &trans &trans  ____   ____   ____        ____   ____        &none
-
-        &none  &trans  &trans  &trans  &trans  &trans     &trans &trans  &trans  &none   &none       &trans  &trans      &none
-    >;
-};
         SYM {
-    bindings = <
-        &none  &none   &none   &none   &none   &none                 &none    &none    &none      &none    &none       &none
+            bindings = <
+&none                           &none     &none        &none   &none                           &none                            &none     &none                           &none          &none     &none      &none
+&none ____ ____ ____ ____ ____  &kp EXCL  &kp SEMI     &kp AT  &kp HASH                        &kp GRAVE                        &none     &none ____ ____ ____ ____ ____  &none          &none     &kp EQUAL  &kp LPAR
+&kp RPAR                        &kp SQT   &kp PERCENT  &none   &none ____ ____ ____ ____ ____  &trans     &trans  &kp ASTERISK  &kp LBKT  &kp RBKT                        &kp AMPERSAND  &kp DLLR  &none      &none
+&trans                          &trans    &trans       &trans  &trans                          &trans     &trans  &trans        &none     &none                           &trans         &trans    &none
+            >;
+        };
 
-        &none  ____    ____    ____    ____    ____                 &kp EXCL   &kp SEMI   &kp AT       &kp HASH   &kp GRAVE     &none
-
-        &none  ____    ____    ____    ____    ____      &none &none   &kp EQUAL  &kp LPAR    &kp RPAR     &kp SQT    &kp PERCENT   &none
-
-        &none  ____    ____    ____    ____    ____      &trans &trans  &kp ASTERISK &kp LBKT   &kp RBKT     &kp AMPERSAND  &kp DLLR   &none
-
-        &none  &trans  &trans  &trans  &trans  &trans     &trans &trans  &trans      &none    &none       &trans   &trans      &none
-    >;
-};
         NAV {
-    bindings = <
-        &none  &none   &none   &none   &none   &none                &none     &none     &none      &none    &none       &none
+            bindings = <
+&none                           &none     &none                           &none     &none                            &none                 &none                           &none   &none   &none     &none     &none
+&none ____ ____ ____ ____ ____  &kp HOME  &kp PGDN                        &kp PGUP  &kp END ____                     &none                 &none ____ ____ ____ ____ ____  &none   &none   &kp LEFT  &kp DOWN  &kp UP
+&kp RIGHT ____                  &none     &none ____ ____ ____ ____ ____  &trans    &trans ____ ____ ____ ____ ____  &none  &none  &trans  &trans                          &trans  &trans  &trans    &trans    &trans
+&trans                          &none     &none                           &trans    &trans                           &none
+            >;
+        };
 
-        &none  ____    ____    ____    ____    ____                &kp HOME   &kp PGDN  &kp PGUP   &kp END  ____       &none
-
-        &none  ____    ____    ____    ____    ____      &none &none   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT   ____   &none
-
-        &none  ____    ____    ____    ____    ____      &trans &trans  ____     ____     ____      ____       ____     &none
-
-        &none  &trans  &trans  &trans  &trans  &trans     &trans &trans  &trans   &none    &none      &trans     &trans    &none
-    >;
-};
         FUNC {
-    bindings = <
-        &none  &none   &none   &none   &none   &none                &none   &none   &none      &none   &none      &none
+            bindings = <
+&none    &none   &none                           &none   &none   &none                                                            &none                            &none  &none   &none   &none   &none
+&none    &kp F1  &kp F2                          &kp F3  &kp F4  &kp F5 ____ ____ ____ ____ ____                                  &none                            &none  &kp F6  &kp F7  &kp F8  &kp F9
+&kp F10  &none   &none ____ ____ ____ ____ ____  &none   &none   &kp F11                          &kp F12 ____ ____ ____  &trans  &trans ____ ____ ____ ____ ____  &none  &none   &trans  &trans  &trans
+&trans   &trans  &trans                          &trans  &trans  &none                            &none                   &trans  &trans                           &none
+            >;
+        };
 
-        &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5               ____   ____   ____       ____   ____      &none
-
-        &none  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10   &none &none   ____   ____   ____       ____   ____      &none
-
-        &none  &kp F11 &kp F12 ____    ____    ____      &trans &trans  ____   ____   ____       ____   ____      &none
-
-        &none  &trans  &trans  &trans  &trans  &trans     &trans &trans  &trans &none  &none     &trans  &trans     &none
-    >;
-};
         MEDIA {
-    bindings = <
-        &none  &none   &none   &none   &none   &none                 &none   &none   &none       &none   &none       &none
+            bindings = <
+&none                           &none       &none                           &none       &none                           &none                                               &none  &none   &none       &none       &none       &none
+&none                           &kp BRI_DN  &kp BRI_UP                      &kp C_PREV  &kp C_PLAY                      &kp C_NEXT                                          &none  &none   &kp C_MUTE  &kp C_VOLD  &kp C_VOLU  &none
+&none ____ ____ ____ ____ ____  &none       &none ____ ____ ____ ____ ____  &none       &none ____ ____ ____ ____ ____  &trans      &trans ____ ____ ____ ____ ____  &none  &none  &trans  &trans      &trans      &trans      &trans
+&trans                          &trans      &trans                          &none       &none                           &trans      &trans                           &none
+            >;
+        };
 
-        &none  &kp BRI_DN  &kp BRI_UP  &kp C_PREV  &kp C_PLAY  &kp C_NEXT    &none  &none  &kp C_MUTE  &kp C_VOLD  &kp C_VOLU   &none
-
-        &none  ____   ____   ____   ____   ____      &none  &none   ____   ____   ____       ____   ____      &none
-
-        &none  ____   ____   ____   ____   ____      &trans &trans  ____   ____   ____       ____   ____      &none
-
-        &none  &trans  &trans  &trans  &trans  &trans     &trans &trans  &trans  &none  &none     &trans  &trans   &none
-    >;
-};
         MOUSE {
-    bindings = <
-        &none  &none   &none   &none   &none   &none                  &none     &none       &none       &none      &none       &none
+            bindings = <
+&none                                &none                            &none          &none  &none                           &none                   &none       &none     &none     &none          &none  &none
+&none ____ ____ ____ ____ ____ ____  &mkp MB4 ____                    &mkp MB5 ____  &none  &none ____ ____ ____ ____ ____  &none                   &none ____  &mkp MB1  &mkp MB3  &mkp MB2 ____  &none  &none ____ ____ ____ ____ ____
+&trans                               &trans ____ ____ ____ ____ ____  &none          &none  &trans                          &trans  &trans  &trans  &trans      &trans    &trans    &trans         &none  &none
+&trans                               &trans                           &none
+            >;
+        };
 
-        &none  ____    ____    ____    ____    ____                  ____     &mkp MB4    ____       &mkp MB5   ____        &none
-
-        &none  ____    ____    ____    ____    ____      &none &none    ____     &mkp MB1    &mkp MB3   &mkp MB2   ____        &none
-
-        &none  ____    ____    ____    ____    ____      &trans &trans   ____     ____       ____        ____        ____        &none
-
-        &none  &trans  &trans  &trans  &trans  &trans      &trans &trans   &trans    &none      &none       &trans     &trans      &none
-    >;
-};
         SYSTEM {
-    bindings = <
-        &none  &none   &none   &none   &none   &none                    &none         &none          &none          &none      &none         &none
-
-        &none  ____    ____    ____    ____    ____                    ____          ____           ____           ____            &bt BT_CLR           &none
-
-        &none  ____    ____    ____    ____    ____      &none &none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4   &none
-
-        &none  ____    ____    ____    ____    ____      &trans &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &none
-
-        &none  &trans  &trans  &trans  &trans  &trans     &trans &trans  &kp W          &none          &none          &trans         &trans          &none
-    >;
-};
+            bindings = <
+&none                                               &none       &none   &none                           &none         &none                                     &none          &none          &none          &none          &none          &none
+&none ____ ____ ____ ____ ____ ____ ____ ____ ____  &bt BT_CLR  &none   &none ____ ____ ____ ____ ____  &none         &none                                     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
+&none ____ ____ ____ ____ ____                      &trans      &trans  &bt BT_SEL 0                    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none          &none          &trans         &trans         &trans         &trans
+&trans                                              &trans      &trans  &kp W                           &none         &none         &trans        &trans        &none
+            >;
+        };
     };
 
     input-processors {
@@ -134,8 +109,6 @@
     };
 
     sensors {
-        pmw3360: pmw3360@0 {
-            input-processors = <&mouse_temp_layer>;
-        };
+        pmw3360: pmw3360@0 { input-processors = <&mouse_temp_layer>; };
     };
 };
