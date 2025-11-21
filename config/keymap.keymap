@@ -75,11 +75,11 @@
 
         MEDIA {
             bindings = <
-&none  &none       &none       &none       &none       &none                       &none   &none   &none       &none       &none       &none
-&none  &kp BRI_DN  &kp BRI_UP  &kp C_PREV  &kp C_PLAY  &kp C_NEXT                  &none   &none   &kp C_MUTE  &kp C_VOLD  &kp C_VOLU  &none
-&none  &trans      &trans      &trans      &trans      &trans      &none   &none   &trans  &trans  &trans      &trans      &trans      &none
-&none  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans      &trans      &trans      &none
-&none  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &none   &none       &trans      &trans      &none
+&none  &none         &none         &none       &none       &none                       &none   &none   &none       &none         &none            &none
+&none  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_PLAY  &kp C_NEXT                  &none   &none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &none
+&none  &trans        &trans        &trans      &trans      &trans      &none   &none   &trans  &trans  &trans      &trans        &trans           &none
+&none  &trans        &trans        &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans      &trans        &trans           &none
+&none  &trans        &trans        &trans      &trans      &trans      &trans  &trans  &trans  &none   &none       &trans        &trans           &none
             >;
         };
 
@@ -99,7 +99,7 @@
 &none  &trans  &trans  &trans  &trans  &trans                  &trans         &trans         &trans         &trans         &bt BT_CLR     &none
 &none  &trans  &trans  &trans  &trans  &trans  &none   &none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp W          &none          &none          &trans         &trans         &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &none          &none          &trans         &trans         &none
             >;
         };
     };
