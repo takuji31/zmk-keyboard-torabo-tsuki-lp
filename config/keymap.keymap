@@ -140,7 +140,7 @@ behaviors {
         };
     };
 
-    sensors {
-        pmw3360: pmw3360@0 { input-processors = <&mouse_temp_layer>; };
+    &trackball_listener {
+        input-processors = <&zip_temp_layer 5 10000>;
     };
 };
