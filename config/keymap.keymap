@@ -273,7 +273,7 @@
 };
 
 &trackball_listener {
-    input-processors = <&mouse_temp_layer 18 2000>;
+    input-processors = <&mouse_temp_layer 18 1000>;
 
     scroller {
         layers = <2 10>;
