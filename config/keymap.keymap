@@ -63,7 +63,7 @@
 &none  &kp Q        &kp W        &kp F         &kp P             &kp G                                &kp J       &kp L         &kp U         &kp Y          &kp MINUS    &none
 &none  &hml A LGUI  &hml R LALT  &hml S LCTRL  &hml T LSHFT      &kp D        &none      &none        &kp H       &hmr N RSHFT  &hmr E RCTRL  &hmr I LALT    &hmr O RGUI  &none
 &none  &kp Z        &kp X        &kp C         &kp V             &kp B        &kp ESC    &kp DEL      &kp K       &kp M         &kp COMMA     &kp DOT        &kp FSLH     &none
-&none  &kp LSHFT    &kp LGUI     &kp LALT      &t3_tapdance_win  &lt 2 SPACE  &lt 3 TAB  &lt 4 ENTER  &lt 5 BSPC  &none         &none         &kp LA(GRAVE)  &mo 8        &none
+&none  &kp LSHFT    &kp LGUI     &kp LALT      &t3_tapdance_win  &lt 2 SPACE  &lt 6 TAB  &lt 6 ENTER  &lt 6 BSPC  &none         &none         &kp LA(GRAVE)  &mo 8        &none
             >;
         };
 
@@ -89,11 +89,11 @@
 
         FUNC {
             bindings = <
-&none  &none    &none    &none   &none   &none                    &none   &none   &none   &none   &none   &none
-&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none   &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans   &trans   &trans  &trans  &trans   &trans  &trans  &trans  &none   &none   &trans  &trans  &none
+&none  &none    &none    &none   &none   &none                    &none   &none      &none     &none     &none      &none
+&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &trans  &trans     &trans    &trans    &trans     &none
+&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none   &none   &trans  &kp RSHFT  &kp LGUI  &kp LALT  &kp RCTRL  &none
+&none  &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &trans  &trans     &trans    &trans    &trans     &none
+&none  &trans   &trans   &trans  &trans  &trans   &trans  &trans  &trans  &none      &none     &trans    &trans     &none
             >;
         };
 
