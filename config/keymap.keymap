@@ -5,12 +5,6 @@
 
 / {
     behaviors {
-        t3_tapdance_win: t3_tapdance_win {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&mt LCTRL LC(SPACE)>, <&kp LA(SPACE)>;
-        };
-
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -45,18 +39,18 @@
 
         Base_Win {
             bindings = <
-&none  &none      &none     &none                       &none             &none                                  &none       &none  &none      &none    &none      &none
-&none  &kp Q      &kp W     &kp F                       &kp P             &kp G                                  &kp J       &kp L  &kp U      &kp Y    &kp MINUS  &none
-&none  &kp A      &kp R     &kp S                       &kp T             &kp D        &none      &none          &kp H       &kp N  &kp E      &kp I    &kp O      &none
-&none  &kp Z      &kp X     &kp C                       &kp V             &kp B        &kp ESC    &kp LA(GRAVE)  &kp K       &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
-&none  &kp LSHFT  &kp LGUI  &mt LALT LA(LC(LG(SPACE)))  &t3_tapdance_win  &lt 1 SPACE  &lt 2 TAB  &lt 3 ENTER    &lt 4 BSPC  &none  &none      &trans   &mo 10     &none
+&none  &none      &none     &none                       &none                &none                                  &none       &none  &none      &none    &none      &none
+&none  &kp Q      &kp W     &kp F                       &kp P                &kp G                                  &kp J       &kp L  &kp U      &kp Y    &kp MINUS  &none
+&none  &kp A      &kp R     &kp S                       &kp T                &kp D        &none      &none          &kp H       &kp N  &kp E      &kp I    &kp O      &none
+&none  &kp Z      &kp X     &kp C                       &kp V                &kp B        &kp ESC    &kp LA(GRAVE)  &kp K       &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
+&none  &kp LSHFT  &kp LGUI  &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 1 SPACE  &lt 2 TAB  &lt 3 ENTER    &lt 4 BSPC  &none  &none      &trans   &mo 10     &none
             >;
         };
 
         NAV_Win {
             bindings = <
 &none  &none     &none     &none      &none      &none                      &none          &none      &none      &none      &none      &none
-&none  &trans    &trans    &trans     &trans     &trans                     &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &none
+&none  &trans    &trans    &trans     &trans     &trans                     &kp LS(LC(Z))  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &none   &none      &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
 &none  &trans    &trans    &trans     &trans     &trans  &trans  &trans     &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
 &none  &trans    &trans    &trans     &trans     &trans  &trans  &kp ENTER  &kp BSPC       &none      &none      &trans     &trans     &none
