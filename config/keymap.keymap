@@ -276,7 +276,7 @@
 
 &trackball_listener {
     input-processors = <
-        &mouse_temp_layer 18 1000
+        &mouse_temp_layer 18 600
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
     >;
 
