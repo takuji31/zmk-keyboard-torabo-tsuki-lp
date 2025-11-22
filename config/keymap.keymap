@@ -51,21 +51,21 @@
 
         BASE_Mac {
             bindings = <
-&none  &none         &none        &none        &none             &none                                &none       &none         &none        &none        &none         &none
-&none  &kp Q         &kp W        &kp F        &kp P             &kp G                                &kp J       &kp L         &kp U        &kp Y        &kp MINUS     &none
-&none  &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T      &kp D        &none      &none        &kp H       &hmr RSHFT N  &hmr LGUI E  &hmr LALT I  &hmr RCTRL O  &none
-&none  &kp Z         &kp X        &kp C        &kp V             &kp B        &kp ESC    &kp RGUI     &kp K       &kp M         &kp COMMA    &kp DOT      &kp FSLH      &none
-&none  &kp LSHFT     &kp LCTRL    &kp LALT     &t3_tapdance_mac  &lt 2 SPACE  &lt 3 TAB  &lt 4 ENTER  &lt 5 BSPC  &none         &none        &trans       &mo 19        &none
+&none  &none      &none      &none     &none             &none                                &none       &none  &none      &none    &none      &none
+&none  &kp Q      &kp W      &kp F     &kp P             &kp G                                &kp J       &kp L  &kp U      &kp Y    &kp MINUS  &none
+&none  &kp A      &kp R      &kp S     &kp T             &kp D        &none      &none        &kp H       &kp N  &kp E      &kp I    &kp O      &none
+&none  &kp Z      &kp X      &kp C     &kp V             &kp B        &kp ESC    &kp RGUI     &kp K       &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
+&none  &kp LSHFT  &kp LCTRL  &kp LALT  &t3_tapdance_mac  &lt 2 SPACE  &lt 3 TAB  &lt 4 ENTER  &lt 5 BSPC  &none  &none      &trans   &mo 19     &none
             >;
         };
 
         Base_Win {
             bindings = <
-&none  &none        &none        &none                       &none                &none                                    &none        &none         &none         &none        &none        &none
-&none  &kp Q        &kp W        &kp F                       &kp P                &kp G                                    &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &none
-&none  &hml LGUI A  &hml LALT R  &hml LCTRL S                &hml LSHFT T         &kp D         &none       &none          &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &none
-&none  &kp Z        &kp X        &kp C                       &kp V                &kp B         &kp ESC     &kp LA(GRAVE)  &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &none
-&none  &kp LSHFT    &kp LGUI     &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 10 SPACE  &lt 11 TAB  &lt 12 ENTER   &lt 13 BSPC  &none         &none         &trans       &mo 19       &none
+&none  &none      &none     &none                       &none                &none                                    &none        &none  &none      &none    &none      &none
+&none  &kp Q      &kp W     &kp F                       &kp P                &kp G                                    &kp J        &kp L  &kp U      &kp Y    &kp MINUS  &none
+&none  &kp A      &kp R     &kp S                       &kp T                &kp D         &none       &none          &kp H        &kp N  &kp E      &kp I    &kp O      &none
+&none  &kp Z      &kp X     &kp C                       &kp V                &kp B         &kp ESC     &kp LA(GRAVE)  &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
+&none  &kp LSHFT  &kp LGUI  &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 10 SPACE  &lt 11 TAB  &lt 12 ENTER   &lt 13 BSPC  &none  &none      &trans   &mo 19     &none
             >;
         };
 
