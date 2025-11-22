@@ -11,12 +11,6 @@
             bindings = <&mt LCTRL LC(SPACE)>, <&kp LA(SPACE)>;
         };
 
-        t3_tapdance_mac: t3_tapdance_mac {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&mt LGUI LC(SPACE)>, <&kp LA(SPACE)>;
-        };
-
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -49,103 +43,13 @@
 
         // BASE Layer
 
-        BASE_Mac {
-            bindings = <
-&none  &none      &none      &none     &none             &none                                &none       &none  &none      &none    &none      &none
-&none  &kp Q      &kp W      &kp F     &kp P             &kp G                                &kp J       &kp L  &kp U      &kp Y    &kp MINUS  &none
-&none  &kp A      &kp R      &kp S     &kp T             &kp D        &none      &none        &kp H       &kp N  &kp E      &kp I    &kp O      &none
-&none  &kp Z      &kp X      &kp C     &kp V             &kp B        &kp ESC    &kp RGUI     &kp K       &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
-&none  &kp LSHFT  &kp LCTRL  &kp LALT  &t3_tapdance_mac  &lt 2 SPACE  &lt 3 TAB  &lt 4 ENTER  &lt 5 BSPC  &none  &none      &to 1    &mo 19     &none
-            >;
-        };
-
         Base_Win {
             bindings = <
-&none  &none      &none     &none                       &none                &none                                    &none        &none  &none      &none    &none      &none
-&none  &kp Q      &kp W     &kp F                       &kp P                &kp G                                    &kp J        &kp L  &kp U      &kp Y    &kp MINUS  &none
-&none  &kp A      &kp R     &kp S                       &kp T                &kp D         &none       &none          &kp H        &kp N  &kp E      &kp I    &kp O      &none
-&none  &kp Z      &kp X     &kp C                       &kp V                &kp B         &kp ESC     &kp LA(GRAVE)  &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
-&none  &kp LSHFT  &kp LGUI  &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 10 SPACE  &lt 11 TAB  &lt 12 ENTER   &lt 13 BSPC  &none  &none      &to 0    &mo 19     &none
-            >;
-        };
-
-        NAV {
-            bindings = <
-&none  &none      &none     &none     &none      &none                      &none          &none      &none      &none      &none      &none
-&none  &trans     &trans    &trans    &trans     &trans                     &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans  &none   &none      &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
-&none  &trans     &trans    &trans    &trans     &trans  &trans  &trans     &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
-&none  &trans     &trans    &trans    &trans     &trans  &trans  &kp ENTER  &kp BSPC       &none      &none      &trans     &trans     &none
-            >;
-        };
-
-        SYM {
-            bindings = <
-&none  &none      &none     &none     &none       &none                   &none         &none     &none     &none          &none        &none
-&none  &trans     &trans    &trans    &trans      &trans                  &kp EXCL      &kp SEMI  &kp AT    &kp HASH       &kp GRAVE    &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans  &none   &none   &kp EQUAL     &kp LPAR  &kp RPAR  &kp SQT        &kp PERCENT  &none
-&none  &trans     &trans    &trans    &trans      &trans  &trans  &trans  &kp ASTERISK  &kp LBKT  &kp RBKT  &kp AMPERSAND  &kp DLLR     &none
-&none  &trans     &trans    &trans    &trans      &trans  &trans  &trans  &kp DEL       &none     &none     &trans         &trans       &none
-            >;
-        };
-
-        FUNC {
-            bindings = <
-&none  &none    &none    &none   &none   &none                    &none   &none      &none     &none     &none      &none
-&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &trans  &trans     &trans    &trans    &trans     &none
-&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none   &none   &trans  &kp RSHFT  &kp LGUI  &kp LALT  &kp RCTRL  &none
-&none  &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &trans  &trans     &trans    &trans    &trans     &none
-&none  &trans   &trans   &trans  &trans  &trans   &trans  &trans  &trans  &none      &none     &trans    &trans     &none
-            >;
-        };
-
-        NUM {
-            bindings = <
-&none  &none   &none   &none   &none   &none                       &none   &none      &none     &none     &none      &none
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &trans  &trans     &trans    &trans    &trans     &none
-&none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0     &none    &none   &trans  &kp RSHFT  &kp LGUI  &kp LALT  &kp RCTRL  &none
-&none  &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans     &trans    &trans    &trans     &none
-&none  &trans  &trans  &trans  &trans  &kp SPACE  &kp TAB  &trans  &trans  &none      &none     &trans    &trans     &none
-            >;
-        };
-
-        MEDIA {
-            bindings = <
-&none  &none         &none         &none       &none       &none                       &none   &none   &none       &none         &none            &none
-&none  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_PLAY  &kp C_NEXT                  &none   &none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &none
-&none  &trans        &trans        &trans      &trans      &trans      &none   &none   &trans  &trans  &trans      &trans        &trans           &none
-&none  &trans        &trans        &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans      &trans        &trans           &none
-&none  &trans        &trans        &trans      &trans      &trans      &trans  &trans  &trans  &none   &none       &trans        &trans           &none
-            >;
-        };
-
-        free_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        free_2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        free_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none      &none     &none                       &none             &none                                  &none       &none  &none      &none    &none      &none
+&none  &kp Q      &kp W     &kp F                       &kp P             &kp G                                  &kp J       &kp L  &kp U      &kp Y    &kp MINUS  &none
+&none  &kp A      &kp R     &kp S                       &kp T             &kp D        &none      &none          &kp H       &kp N  &kp E      &kp I    &kp O      &none
+&none  &kp Z      &kp X     &kp C                       &kp V             &kp B        &kp ESC    &kp LA(GRAVE)  &kp K       &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
+&none  &kp LSHFT  &kp LGUI  &mt LALT LA(LC(LG(SPACE)))  &t3_tapdance_win  &lt 1 SPACE  &lt 2 TAB  &lt 3 ENTER    &lt 4 BSPC  &none  &none      &trans   &mo 10     &none
             >;
         };
 
@@ -242,7 +146,7 @@
         SYSTEM {
             bindings = <
 &none  &none   &none   &none   &none   &none                   &none          &none          &none          &none          &none          &none
-&none  &trans  &tog 1  &trans  &trans  &trans                  &trans         &trans         &trans         &trans         &bt BT_CLR     &none
+&none  &trans  &tog 0  &trans  &trans  &trans                  &trans         &trans         &trans         &trans         &bt BT_CLR     &none
 &none  &trans  &trans  &trans  &trans  &trans  &none   &none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &none          &none          &trans         &trans         &none
@@ -262,14 +166,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        adjust_mac {
-            if-layers = <3 4>;
-            then-layer = <6>;
-        };
-
         adjust_win {
-            if-layers = <11 12>;
-            then-layer = <14>;
+            if-layers = <2 3>;
+            then-layer = <5>;
         };
     };
 };
