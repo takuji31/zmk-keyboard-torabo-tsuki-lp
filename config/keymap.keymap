@@ -43,31 +43,31 @@
 
         Base_Win {
             bindings = <
-&none  &none      &none     &none                       &none                &none                                  &none       &none  &none      &none    &none      &none
-&none  &kp Q      &kp W     &kp F                       &kp P                &kp G                                  &kp J       &kp L  &kp U      &kp Y    &kp MINUS  &none
-&none  &kp A      &kp R     &kp S                       &kp T                &kp D        &none      &none          &kp H       &kp N  &kp E      &kp I    &kp O      &none
-&none  &kp Z      &kp X     &kp C                       &kp V                &kp B        &kp ESC    &kp LA(GRAVE)  &kp K       &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
-&none  &kp LSHFT  &kp LGUI  &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 1 SPACE  &lt 2 TAB  &lt 3 ENTER    &lt 4 BSPC  &none  &none      &trans   &mo 10     &none
+&none  &none      &none     &none                       &none                &none                                  &none        &none  &none      &none    &none      &none
+&none  &kp Q      &kp W     &kp F                       &kp P                &kp G                                  &kp J        &kp L  &kp U      &kp Y    &kp MINUS  &none
+&none  &kp A      &kp R     &kp S                       &kp T                &kp D        &none      &none          &kp H        &kp N  &kp E      &kp I    &kp O      &none
+&none  &kp Z      &kp X     &kp C                       &kp V                &kp B        &kp ESC    &kp LA(GRAVE)  &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &none
+&none  &kp LSHFT  &kp LGUI  &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 1 SPACE  &lt 2 TAB  &lt 3 BSPC     &lt 4 ENTER  &none  &none      &trans   &mo 10     &none
             >;
         };
 
         NAV_Win {
             bindings = <
-&none  &none      &none      &none      &none      &none                             &none     &none     &none      &none      &none      &none
-&none  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                            &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &none
-&none  &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &none   &none      &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
-&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(LS(Z))  &trans  &trans     &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
-&none  &trans     &trans     &trans     &trans     &trans         &trans  &kp ENTER  &kp BSPC  &none     &none      &trans     &trans     &none
+&none  &none      &none      &none      &none      &none                            &none      &none     &none      &none      &none      &none
+&none  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                           &kp N6     &kp N7    &kp N8     &kp N9     &kp N0     &none
+&none  &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &none   &none     &trans     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
+&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(LS(Z))  &trans  &trans    &kp INS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
+&none  &trans     &trans     &trans     &trans     &trans         &trans  &kp BSPC  &kp ENTER  &none     &none      &trans     &trans     &none
             >;
         };
 
         SYM_Win {
             bindings = <
-&none  &none     &none     &none      &none       &none                   &none         &none     &none     &none          &none        &none
-&none  &trans    &trans    &trans     &trans      &trans                  &kp EXCL      &kp SEMI  &kp AT    &kp HASH       &kp GRAVE    &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans  &none   &none   &kp EQUAL     &kp LPAR  &kp RPAR  &kp SQT        &kp PERCENT  &none
-&none  &trans    &trans    &trans     &trans      &trans  &trans  &trans  &kp ASTERISK  &kp LBKT  &kp RBKT  &kp AMPERSAND  &kp DLLR     &none
-&none  &trans    &trans    &trans     &trans      &trans  &trans  &trans  &kp DEL       &none     &none     &trans         &trans       &none
+&none  &none     &none     &none      &none       &none                    &none         &none     &none     &none          &none        &none
+&none  &trans    &trans    &trans     &trans      &trans                   &kp EXCL      &kp SEMI  &kp AT    &kp HASH       &kp GRAVE    &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans  &none   &none    &kp EQUAL     &kp LPAR  &kp RPAR  &kp SQT        &kp PERCENT  &none
+&none  &trans    &trans    &trans     &trans      &trans  &trans  &trans   &kp ASTERISK  &kp LBKT  &kp RBKT  &kp AMPERSAND  &kp DLLR     &none
+&none  &trans    &trans    &trans     &trans      &trans  &trans  &kp DEL  &trans        &none     &none     &trans         &trans       &none
             >;
         };
 
