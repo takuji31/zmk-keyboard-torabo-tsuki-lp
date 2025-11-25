@@ -43,11 +43,11 @@
 
         Base_Win {
             bindings = <
-&none  &none        &none        &none                       &none                &none                                  &none        &none         &none         &none        &none        &none
-&none  &kp Q        &kp W        &kp F                       &kp P                &kp G                                  &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &none
-&none  &hml LGUI A  &hml LALT R  &hml LCTRL S                &hml LSHIFT T        &kp D        &none      &none          &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &none
-&none  &kp Z        &kp X        &kp C                       &kp V                &kp B        &kp ESC    &kp LA(GRAVE)  &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &none
-&none  &kp LSHFT    &kp LGUI     &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 1 SPACE  &lt 2 TAB  &lt 3 BSPC     &lt 4 ENTER  &none         &none         &trans       &mo 10       &none
+&trans  &trans       &trans       &trans                      &trans               &trans                                 &trans       &trans        &trans        &trans       &trans       &trans
+&trans  &kp Q        &kp W        &kp F                       &kp P                &kp G                                  &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
+&trans  &hml LGUI A  &hml LALT R  &hml LCTRL S                &hml LSHIFT T        &kp D        &trans     &trans         &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
+&trans  &kp Z        &kp X        &kp C                       &kp V                &kp B        &kp ESC    &kp LA(GRAVE)  &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &trans
+&trans  &trans       &kp LGUI     &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 1 SPACE  &lt 2 TAB  &lt 3 BSPC     &lt 4 ENTER  &trans        &trans        &trans       &mo 10       &trans
             >;
         };
 
