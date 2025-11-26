@@ -47,7 +47,17 @@
 &trans  &kp Q        &kp W        &kp F                       &kp P                &kp G                                  &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
 &trans  &hml LGUI A  &hml LALT R  &hml LCTRL S                &hml LSHIFT T        &kp D        &trans     &trans         &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
 &trans  &kp Z        &kp X        &kp C                       &kp V                &kp B        &kp ESC    &kp LA(GRAVE)  &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &trans
-&trans  &trans       &kp LGUI     &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 1 SPACE  &lt 2 TAB  &lt 3 BSPC     &lt 4 ENTER  &trans        &trans        &trans       &mo 10       &trans
+&trans  &trans       &kp LGUI     &mt LALT LA(LC(LG(SPACE)))  &mt LCTRL LA(SPACE)  &lt 2 SPACE  &lt 3 TAB  &lt 4 BSPC     &lt 5 ENTER  &trans        &trans        &trans       &mo 7        &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&none  &none   &none   &none   &none   &none                   &none   &none     &none     &none     &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp MB4  &trans    &mkp MB5  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none     &trans    &trans  &none
             >;
         };
 
@@ -101,46 +111,6 @@
             >;
         };
 
-        free_win_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        free_win_2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        free_win_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        MOUSE {
-            bindings = <
-&none  &none   &none   &none   &none   &none                   &none   &none     &none     &none     &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp MB4  &trans    &mkp MB5  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none     &trans    &trans  &none
-            >;
-        };
-
         SYSTEM {
             bindings = <
 &none  &none   &none   &none   &none   &none                   &none          &none          &none          &none          &none          &none
@@ -165,8 +135,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_win {
-            if-layers = <2 3>;
-            then-layer = <5>;
+            if-layers = <3 4>;
+            then-layer = <6>;
         };
     };
 };
