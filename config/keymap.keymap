@@ -39,7 +39,10 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SUPER_ALT_WIN";
             #binding-cells = <0>;
-            bindings = <&mt LALT LA(SPACE)>, <&kp LA(LC(LG(SPACE)))>;
+            bindings =
+                <&mt LALT LA(SPACE)>,
+                <&kp LA(LC(SPACE))>,
+                <&kp LA(LG(LC(SPACE)))>;
         };
     };
 
