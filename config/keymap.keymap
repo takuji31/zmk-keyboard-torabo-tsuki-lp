@@ -35,12 +35,12 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 38 39 40 41 42 43 44 52 53 54 55 56 57 58>;
         };
 
-        super_alt_win: super_alt_win {
+        super_ctrl_win: super_ctrl_win {
             compatible = "zmk,behavior-tap-dance";
-            label = "SUPER_ALT_WIN";
+            label = "SUPER_CTRL_WIN";
             #binding-cells = <0>;
             bindings =
-                <&mt LALT LA(SPACE)>,
+                <&mt LCTRL LA(SPACE)>,
                 <&kp LA(LC(SPACE))>,
                 <&kp LA(LG(LC(SPACE)))>;
         };
@@ -53,11 +53,11 @@
 
         Base_Win {
             bindings = <
-&trans  &trans       &trans       &trans          &trans         &trans                                   &trans       &trans        &trans        &trans       &trans       &trans
-&trans  &kp Q        &kp W        &kp F           &kp P          &kp G                                    &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
-&trans  &hml LGUI A  &hml LALT R  &hml LCTRL S    &hml LSHIFT T  &kp D        &trans          &trans      &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
-&trans  &kp Z        &kp X        &kp C           &kp V          &kp B        &kp LANG2       &kp LANG1   &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &trans
-&trans  &trans       &kp LGUI     &super_alt_win  &mt LCTRL ESC  &lt 2 SPACE  &mt LSHIFT TAB  &lt 4 BSPC  &lt 5 ENTER  &trans        &trans        &trans       &mo 7        &trans
+&trans  &trans       &trans       &trans           &trans         &trans                                   &trans       &trans        &trans        &trans       &trans       &trans
+&trans  &kp Q        &kp W        &kp F            &kp P          &kp G                                    &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
+&trans  &hml LGUI A  &hml LALT R  &hml LCTRL S     &hml LSHIFT T  &kp D        &trans          &trans      &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
+&trans  &kp Z        &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1   &kp K        &kp M         &kp COMMA     &kp DOT      &kp FSLH     &trans
+&trans  &kp LGUI     &kp LALT     &super_ctrl_win  &lt 3 ESC      &lt 2 SPACE  &mt LSHIFT TAB  &lt 4 BSPC  &lt 5 ENTER  &trans        &trans        &trans       &mo 7        &trans
             >;
         };
 
