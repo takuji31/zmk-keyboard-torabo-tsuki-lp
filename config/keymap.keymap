@@ -57,18 +57,28 @@
 &trans  &trans       &trans       &trans           &trans         &trans                                  &trans       &trans        &trans        &trans       &trans       &trans
 &trans  &kp Q        &kp W        &kp F            &kp P          &kp G                                   &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
 &trans  &hml LGUI A  &hml LALT R  &hml LCTRL S     &hml LSHIFT T  &kp D        &trans          &trans     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
-&trans  &lt 1 Z      &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1  &kp K        &kp M         &kp COMMA     &kp DOT      &lt 1 FSLH   &trans
-&trans  &kp LGUI     &kp LALT     &super_ctrl_win  &lt 3 ESC      &lt 2 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 4 ENTER  &trans        &trans        &trans       &mo 6        &trans
+&trans  &kp Z        &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1  &kp K        &kp M         &kp COMMA     &kp DOT      &kp SLASH    &trans
+&trans  &tog 1       &kp LGUI     &super_ctrl_win  &lt 4 ESC      &lt 3 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 5 ENTER  &trans        &trans        &trans       &mo 7        &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none   &none     &none     &none     &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp MB4  &trans    &mkp MB5  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none     &trans    &trans  &none
+&none  &none   &none   &none   &none   &none                   &none     &none     &none     &none     &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans    &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &mkp MB5  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &trans    &trans    &trans    &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none     &none     &trans    &trans  &none
+            >;
+        };
+
+        mouse_snipe {
+            bindings = <
+&none  &none   &none   &none   &none   &none                   &none     &none     &none     &none     &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans    &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &mkp MB5  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &trans    &trans    &trans    &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none     &none     &trans    &trans  &none
             >;
         };
 
@@ -136,8 +146,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_win {
-            if-layers = <4 2>;
-            then-layer = <5>;
+            if-layers = <5 3>;
+            then-layer = <6>;
         };
     };
 };
