@@ -58,7 +58,7 @@
 &trans  &kp Q        &kp W        &kp F            &kp P          &kp G                                   &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
 &trans  &hml LGUI A  &hml LALT R  &hml LCTRL S     &hml LSHIFT T  &kp D        &trans          &trans     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
 &trans  &kp Z        &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1  &kp K        &kp M         &kp COMMA     &kp DOT      &kp SLASH    &trans
-&trans  &mo 2        &kp LGUI     &super_ctrl_win  &lt 4 ESC      &lt 3 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 5 ENTER  &trans        &trans        &trans       &mo 7        &trans
+&trans  &mo 0        &kp LGUI     &super_ctrl_win  &lt 4 ESC      &lt 3 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 5 ENTER  &trans        &trans        &trans       &mo 7        &trans
             >;
         };
 
@@ -74,11 +74,11 @@
 
         mouse_snipe {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &none
+&none  &none   &none   &none   &none   &none                   &none     &none     &none     &none     &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans    &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &mkp MB5  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &trans    &trans    &trans    &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none     &none     &trans    &trans  &none
             >;
         };
 
@@ -94,11 +94,11 @@
 
         SYM_Win {
             bindings = <
-&none  &none     &none     &none      &none       &none                    &none         &none     &none     &none          &none        &none
-&none  &trans    &trans    &trans     &trans      &trans                   &kp EXCL      &kp SEMI  &kp AT    &kp HASH       &kp GRAVE    &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans  &none   &none    &kp EQUAL     &kp LPAR  &kp RPAR  &kp SQT        &kp PERCENT  &none
-&none  &trans    &trans    &trans     &trans      &trans  &trans  &trans   &kp ASTERISK  &kp LBKT  &kp RBKT  &kp AMPERSAND  &kp DLLR     &none
-&none  &trans    &trans    &trans     &trans      &trans  &trans  &kp DEL  &trans        &none     &none     &trans         &trans       &none
+&none  &none     &none     &none      &none       &none                     &none         &none     &none     &none          &none        &none
+&none  &trans    &trans    &trans     &trans      &trans                    &kp EXCL      &kp SEMI  &kp AT    &kp HASH       &kp GRAVE    &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans  &none   &none     &kp EQUAL     &kp LPAR  &kp RPAR  &kp SQT        &kp PERCENT  &none
+&none  &trans    &trans    &trans     &trans      &trans  &trans  &kp BSLH  &kp ASTERISK  &kp LBKT  &kp RBKT  &kp AMPERSAND  &kp DLLR     &none
+&none  &trans    &trans    &trans     &trans      &trans  &trans  &kp DEL   &trans        &none     &none     &trans         &trans       &none
             >;
         };
 
