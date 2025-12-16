@@ -94,11 +94,11 @@
 
         SYM_Win {
             bindings = <
-&none  &none     &none     &none      &none       &none                     &none         &none     &none     &none          &none        &none
-&none  &trans    &trans    &trans     &trans      &trans                    &kp EXCL      &kp SEMI  &kp AT    &kp HASH       &kp GRAVE    &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans  &none   &none     &kp EQUAL     &kp LPAR  &kp RPAR  &kp SQT        &kp PERCENT  &none
-&none  &trans    &trans    &trans     &trans      &trans  &trans  &kp BSLH  &kp ASTERISK  &kp LBKT  &kp RBKT  &kp AMPERSAND  &kp DLLR     &none
-&none  &trans    &trans    &trans     &trans      &trans  &trans  &kp DEL   &trans        &none     &none     &trans         &trans       &none
+&none  &none     &none     &none      &none       &none                    &none      &none      &none      &none      &none      &none
+&none  &kp EXCL  &kp AT    &kp HASH   &kp DLLR    &kp PRCNT                &kp CARET  &kp AMPS   &kp ASTRK  &kp PLUS   &kp EQUAL  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none     &none  &none   &kp DQT    &kp LPAR   &kp RPAR   &kp COLON  &kp SQT    &none
+&none  &none     &none     &none      &none       &none     &none  &none   &kp SEMI   &kp LBKT   &kp RBKT   &kp GRAVE  &kp BSLH   &none
+&none  &trans    &trans    &trans     &trans      &trans    &trans &kp DEL &trans     &none      &none      &trans     &trans     &none
             >;
         };
 
