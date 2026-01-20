@@ -58,7 +58,7 @@
 &trans  &kp Q        &kp W        &kp F            &kp P          &kp G                                   &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
 &trans  &hml LGUI A  &hml LALT R  &hml LCTRL S     &hml LSHIFT T  &kp D        &trans          &trans     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
 &trans  &kp Z        &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1  &kp K        &kp M         &kp COMMA     &kp DOT      &kp SLASH    &trans
-&trans  &mo 3        &kp LGUI     &super_ctrl_win  &lt 5 ESC      &lt 4 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 6 ENTER  &trans        &trans        &trans       &mo 8        &trans
+&trans  &mo 2        &lt 3 LGUI   &super_ctrl_win  &lt 5 ESC      &lt 4 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 6 ENTER  &trans        &trans        &trans       &mo 8        &trans
             >;
         };
 
