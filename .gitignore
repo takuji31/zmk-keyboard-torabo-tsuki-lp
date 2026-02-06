@@ -1,0 +1,18 @@
+.claude/settings.local.json
+
+# West workspace (safety: in case west runs at repo root by mistake)
+.west/
+zmk/
+modules/
+tools/
+bootloader/
+zmk-*/
+
+# Local build workspace
+.build/
+
+# Build outputs
+firmware/
+
+# Build script temp
+.build_inner.sh
