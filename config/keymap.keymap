@@ -129,8 +129,8 @@
 
 &pointing_listener {
     input-processors = <
-        &mouse_runtime_input_processor
         &scroll_runtime_input_processor
+        &mouse_runtime_input_processor
     >;
 };
 
