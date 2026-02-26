@@ -58,7 +58,7 @@
 &trans  &kp Q        &kp W        &kp F            &kp P          &kp G                                   &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
 &trans  &hml LGUI A  &hml LALT R  &hml LCTRL S     &hml LSHIFT T  &kp D        &trans          &trans     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
 &trans  &kp Z        &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1  &kp K        &kp M         &kp COMMA     &kp DOT      &kp SLASH    &trans
-&trans  &mo 1        &lt 2 LGUI   &super_ctrl_win  &lt 4 ESC      &lt 3 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 5 ENTER  &trans        &trans        &trans       &mo 7        &trans
+&trans  &mo 1        &lt 2 LGUI   &super_ctrl_win  &lt 4 ESC      &lt 3 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 5 ENTER  &trans        &trans        &trans       &mo 6        &trans
             >;
         };
 
@@ -112,23 +112,13 @@
             >;
         };
 
-        MEDIA_win {
-            bindings = <
-&none  &none         &none         &none       &none       &none                       &none   &none   &none       &none         &none            &none
-&none  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_PLAY  &kp C_NEXT                  &none   &none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &none
-&none  &trans        &trans        &trans      &trans      &trans      &none   &none   &trans  &trans  &trans      &trans        &trans           &none
-&none  &trans        &trans        &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans      &trans        &trans           &none
-&none  &trans        &trans        &trans      &trans      &trans      &trans  &trans  &trans  &none   &none       &trans        &trans           &none
-            >;
-        };
-
         SYSTEM {
             bindings = <
-&none  &none   &none   &none   &none   &none                         &none          &none          &none          &none          &none          &none
-&none  &trans  &tog 0  &trans  &trans  &none                        &trans         &trans         &trans         &trans         &bt BT_CLR     &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none         &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &out OUT_TOG  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans         &none          &none          &trans         &trans         &none
+&none  &none         &none         &none       &none       &none                         &none           &none          &none          &none          &none            &none
+&none  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_PLAY  &kp C_NEXT                    &studio_unlock  &bt BT_CLR     &kp C_MUTE     &kp C_VOL_DN   &kp C_VOLUME_UP  &none
+&none  &trans        &trans        &trans      &trans      &trans      &none   &none      &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none
+&none  &trans        &trans        &trans      &trans      &trans      &trans  &out OUT_TOG  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
+&none  &trans        &trans        &trans      &trans      &trans      &trans  &trans        &trans         &none          &none          &trans         &trans           &none
             >;
         };
     };
@@ -142,14 +132,6 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_win {
-            if-layers = <5 3>;
-            then-layer = <6>;
-        };
-    };
 };
 
 &pointing_listener {
