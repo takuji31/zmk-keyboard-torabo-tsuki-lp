@@ -54,11 +54,11 @@
 
         Base_Win {
             bindings = <
-&trans  &trans       &trans       &trans           &trans         &trans                                  &trans       &trans        &trans        &trans       &trans       &trans
-&trans  &kp Q        &kp W        &kp F            &kp P          &kp G                                   &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &trans
-&trans  &hml LGUI A  &hml LALT R  &hml LCTRL S     &hml LSHIFT T  &kp D        &trans          &trans     &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &trans
-&trans  &kp Z        &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1  &kp K        &kp M         &kp COMMA     &kp DOT      &kp SLASH    &trans
-&trans  &mo 1        &lt 2 LGUI   &super_ctrl_win  &lt 4 ESC      &lt 3 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 5 ENTER  &trans        &trans        &trans       &mo 6        &trans
+&none   &none        &none        &none            &none          &none                                   &none        &none         &none         &none        &none        &none
+&none   &kp Q        &kp W        &kp F            &kp P          &kp G                                   &kp J        &kp L         &kp U         &kp Y        &kp MINUS    &none
+&none   &hml LGUI A  &hml LALT R  &hml LCTRL S     &hml LSHIFT T  &kp D        &none           &none      &kp H        &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &none
+&none   &kp Z        &kp X        &kp C            &kp V          &kp B        &kp LANG2       &kp LANG1  &kp K        &kp M         &kp COMMA     &kp DOT      &kp SLASH    &none
+&none   &mo 1        &lt 2 LGUI   &super_ctrl_win  &lt 4 ESC      &lt 3 SPACE  &mt LSHIFT TAB  &kp BSPC   &lt 5 ENTER  &none         &none         &trans       &mo 6        &none
             >;
         };
 
